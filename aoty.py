@@ -36,8 +36,6 @@ except urllib2.HTTPError, e:
 
 soup = BeautifulSoup(page,'html.parser')
 name_box = soup.find_all('span', attrs={'itemprop': 'itemListElement'})
-print(name_box)
-print(soup.get_text())
 while(not name_box):
     index = randint(1,index)
     page_number = int(index/20)+1
