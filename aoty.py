@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from random import *
 quote_page = 'http://www.albumoftheyear.org/ratings/user-highest-rated/'
 year = ""
-while(year>2017):
+while(year>2018):
     year = input("Year or Decade: ")
 isDecade = False
 if(year%10==0):
